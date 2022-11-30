@@ -1,0 +1,1 @@
+file 0-current_working_directory contains a script that outputs the current working directory
