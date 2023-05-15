@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -type d -empty | ls -t | head -n 20
+find . -empty | rev | cut -d '/' -f 1 | rev
