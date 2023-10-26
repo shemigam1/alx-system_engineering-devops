@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays contents of current dir in trimmed list format
+list="$(ls)"
+for i in $list; do
+	part_after=${i#*-}
+	echo "$part_after"
+done
