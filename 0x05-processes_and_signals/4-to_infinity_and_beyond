@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # display to infinity ad beyond indefinately
-i=0
-while [ $i -lt 1 ]
+for (( i=0; i<9; ))
 do
 	echo "To infinity and beyond"
 	sleep 2
