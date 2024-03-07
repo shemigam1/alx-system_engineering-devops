@@ -4,9 +4,16 @@
 sudo apt-get update
 sudo apt-get install -y nginx
 
+<<<<<<< HEAD
 sudo ufw allow 22
 sudo ufw allow 80
 sudo ufw enable
 echo 'Holberton School' | sudo tee /var/www/html/index.html > /dev/null
 sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+=======
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com/ permanent;"
+sudo sed -i "s/server_name _;/$string/" /etc/nginx/sites-enabled/default
+
+>>>>>>> 028043aba5aeeab951e62d7746f6d7945507263a
 sudo service nginx restart
