@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-this script queries the reddit api 
+this script queries the reddit api
 for the titles of first 10 hot posts on a subreddit
 """
 import requests
+
 
 def top_ten(subreddit):
     """

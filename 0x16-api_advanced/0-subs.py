@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 """
-this script queries the reddit api 
+this script queries the reddit api
 for the number of subscribers on a subreddit
 """
 import requests
+
 
 def number_of_subscribers(subreddit):
     """
